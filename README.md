@@ -43,5 +43,3 @@ Gracias a este diseño:
 - **Aprendizaje práctico:** Comprender el flujo real de mensajes y configuraciones necesarias para un sistema de mensajería basado en colas y exchanges.
 
 ---
-
-*Este informe resume los conceptos clave y resultados del taller para la integración de RabbitMQ con Apache Camel, demostrando la implementación exitosa del patrón de mensajería asincrónica y sus beneficios para sistemas distribuidos.*
