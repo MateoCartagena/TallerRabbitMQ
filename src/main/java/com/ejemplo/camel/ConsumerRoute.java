@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 public class ConsumerRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
-        from("rabbitmq://localhost/test.camel.queue?username=guest&password=guest")
+        from("rabbitmq://localhost/test.camel.queue?username=guest&password=guest&autoDelete=false&durable=true")
             .log("Mensaje recibido: ${body}");
     }
 }

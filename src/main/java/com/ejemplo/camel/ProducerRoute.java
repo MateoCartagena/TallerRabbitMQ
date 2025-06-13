@@ -10,6 +10,6 @@ public class ProducerRoute extends RouteBuilder {
         from("timer:generate?period=5000") // cada 5 segundos
             .setBody().simple("Mensaje generado en ${date:now:yyyy-MM-dd HH:mm:ss}")
             .log("Enviando: ${body}")
-            .to("rabbitmq://localhost/test.camel.queue?username=guest&password=guest");
+            .to("rabbitmq://localhost/test.camel.queue?username=guest&password=guest&autoDelete=false&durable=true");
     }
 }
